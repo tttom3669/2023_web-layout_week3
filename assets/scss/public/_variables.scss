@@ -1,0 +1,95 @@
+// ---斷點---
+$breakpoints: (
+  lg: 992px,
+  md: 767px,
+  sm: 600px,
+);
+// ---顏色---
+$primary: #aa0601;
+$secondary: #650300;
+
+$colors: (
+  'primary': $primary,
+  'secondary': $secondary,
+  'white': #ffffff,
+  'black': #000000,
+);
+
+// ---文字---
+$font-weight: (
+  'regular': 400,
+  'medium': 500,
+  'bold': 700,
+  'black': 900,
+);
+
+$font-size-base: 16px;
+
+$title-sizes: (
+  1: $font-size-base * 4,
+  2: $font-size-base * 3,
+  3: $font-size-base * 2,
+  4: $font-size-base * 1.5,
+  5: $font-size-base * 1.25,
+);
+
+$font-sizes: (
+  14: 14px,
+  16: 16px,
+  18: 18px,
+  19: 19px,
+  20: 20px,
+  24: 24px,
+  32: 32px,
+  36: 36px,
+  42: 42px,
+);
+// ---display---
+$display: (flex, block, none, inline-block);
+
+// ---flex---
+$flex-wrap: (
+  wrap: wrap,
+);
+$justify-content: (
+  center: center,
+  start:flex-start,
+  between: space-between,
+);
+$align-items: (
+  center: center,
+  stretch: stretch,
+);
+$flex-direction:(
+  row,
+  column,
+);
+//---間距---
+$spacer: 1rem;
+
+$direction: (
+  t: top,
+  b: bottom,
+  s: left,
+  e: right,
+);
+
+$gap-spacers: (
+  0: 0,
+  1: $spacer * 1.5,
+  2: $spacer * 2,
+  // 32px
+  3: $spacer * 3,
+  // 48px
+  4: $spacer * 4,
+  // 64px
+);
+
+$spacers: (
+  10: 10px,
+  16: 16px,
+  20: 20px,
+  24: 24px,
+  32: 32px,
+  48: 48px,
+);

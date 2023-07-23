@@ -1,0 +1,9 @@
+@mixin breakpoints($bp_parameter) {
+  @each $key, $value in $breakpoints {
+    @if ($key == $bp_parameter) {
+      @media (max-width: $value) {
+        @content;
+      }
+    }
+  }
+}

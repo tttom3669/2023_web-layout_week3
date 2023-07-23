@@ -1,4 +1,25 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.logo{
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true');
+  width: 80px;
+  height: 48px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@include breakpoints(sm){
+  .mobile-bar{
+    li{
+      height: 48px;
+      width: 50%;
+      border: 1px solid #ffffff;
+    }
+    a{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+  }
 }

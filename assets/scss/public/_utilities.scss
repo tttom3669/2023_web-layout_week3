@@ -1,0 +1,180 @@
+//---容器---
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+  @include breakpoints(lg) {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  @include breakpoints(sm) {
+    padding-left: 13px;
+    padding-right: 14px;
+  }
+}
+
+//--- 顏色 ---
+@each $key, $value in $colors {
+  .text-#{$key} {
+    color: $value;
+  }
+  .bg-#{$key} {
+    background-color: $value;
+  }
+}
+
+//--- 文字 ---
+@each $key, $value in $font-weight {
+  .fw-#{$key} {
+    font-weight: $value;
+  }
+}
+
+@each $key, $value in $title-sizes {
+  .h#{$key} {
+    font-size: $value;
+  }
+}
+
+@each $key, $value in $font-sizes {
+  .fs-#{$key} {
+    font-size: $value;
+  }
+}
+@each $bp_key, $bp_val in $breakpoints {
+  @media (max-width: $bp_val) {
+    @each $key, $value in $font-sizes {
+      .fs-#{$bp_key}-#{$key} {
+        font-size: $value;
+      }
+    }
+  }
+}
+// ---display---
+@each $value in $display {
+  .d-#{$value} {
+    display: $value;
+  }
+}
+@each $bp_key, $bp_val in $breakpoints {
+  @media (max-width: $bp_val) {
+    @each $value in $display {
+      .d-#{$bp_key}-#{$value} {
+        display: $value;
+      }
+    }
+  }
+}
+
+// ---flex---
+@each $key, $value in $flex-wrap {
+  .flex-#{$key} {
+    flex-wrap: $value;
+  }
+}
+
+@each $key, $value in $justify-content {
+  .justify-content-#{$key} {
+    justify-content: $value;
+  }
+}
+@each $bp_key, $bp_val in $breakpoints {
+  @media (max-width: $bp_val) {
+    @each $key, $value in $justify-content {
+      .justify-content-#{$bp_key}-#{$key} {
+        justify-content: $value;
+      }
+    }
+  }
+}
+@each $key, $value in $align-items {
+  .align-items-#{$key} {
+    align-items: $value;
+  }
+}
+@each $bp_key, $bp_val in $breakpoints {
+  @media (max-width: $bp_val) {
+    @each $key, $value in $align-items {
+      .align-items-#{$bp_key}-#{$key} {
+        align-items: $value;
+      }
+    }
+  }
+}
+
+@each $value in $flex-direction {
+  .flex-#{$value} {
+    flex-direction: $value;
+  }
+}
+@each $bp_key, $bp_val in $breakpoints {
+  @media (max-width: $bp_val) {
+    @each $value in $flex-direction {
+      .flex-#{$bp_key}-#{$value} {
+        flex-direction: $value;
+      }
+    }
+  }
+}
+
+//---間距---
+@each $key, $value in $gap-spacers {
+  .g-#{$key} {
+    gap: $value;
+  }
+}
+@each $bp_key, $bp_val in $breakpoints {
+  @media (max-width: $bp_val) {
+    @each $key, $value in $gap-spacers {
+      .g-#{$bp_key}-#{$key} {
+        gap: $value;
+      }
+    }
+  }
+}
+
+@each $key, $value in $spacers {
+  .py-#{$key} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+  .px-#{$key} {
+    padding-right: $value;
+    padding-left: $value;
+  }
+  .p-#{$key} {
+    padding: $value;
+  }
+}
+@each $dir_key, $dir_val in $direction {
+  @each $key, $value in $spacers {
+    .p#{$dir_key}-#{$key} {
+      padding-#{$dir_val}: $value;
+    }
+  }
+  @each $key, $value in $spacers {
+    .m#{$dir_key}-#{$key} {
+      margin-#{$dir_val}: $value;
+    }
+  }
+}
+
+@each $bp_key, $bp_val in $breakpoints {
+  @media (max-width: $bp_val) {
+    @each $dir_key, $dir_val in $direction {
+      @each $key, $value in $spacers {
+        .p#{$dir_key}-#{$bp_key}-#{$key} {
+          padding-#{$dir_val}: $value;
+        }
+      }
+      @each $key, $value in $spacers {
+        .m#{$dir_key}-#{$bp_key}-#{$key} {
+          margin-#{$dir_val}: $value;
+        }
+      }
+    }
+  }
+}
+
+.border-bottom {
+  border-bottom: 1px solid white;
+}
