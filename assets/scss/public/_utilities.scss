@@ -32,6 +32,7 @@
 @each $key, $value in $title-sizes {
   .h#{$key} {
     font-size: $value;
+    font-weight: 700;
   }
 }
 
@@ -177,4 +178,9 @@
 
 .border-bottom {
   border-bottom: 1px solid white;
+}
+
+.title-border{
+    border-left: 8px solid #9F1213;
+    padding-left: 16px;
 }

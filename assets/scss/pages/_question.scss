@@ -1,0 +1,17 @@
+.question{
+    padding-top: 96px;
+    padding-bottom: 80px;
+    @include breakpoints(md){
+        padding-top: 80px;
+    }
+    @include breakpoints(sm){
+        padding-top: 40px;
+        padding-bottom: 64px;
+    }
+    ul{
+        max-width: 856px;
+        @include breakpoints(md){
+            max-width:100%
+        }
+    }
+}

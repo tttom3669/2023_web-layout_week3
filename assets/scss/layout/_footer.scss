@@ -14,7 +14,6 @@
 }
 .connection{
   width: 100%;
-  order: 3;
   @include breakpoints(sm) {
     order: -1;
     width: auto;
