@@ -1,7 +1,9 @@
 //---容器---
 .container {
-  max-width: 1296px;
+  max-width: 1320px; //(1296+12+12)
   margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
   @include breakpoints(lg) {
     padding-left: 36px;
     padding-right: 36px;
