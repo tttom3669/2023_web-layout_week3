@@ -1,4 +1,4 @@
-$gutter-width:24px;
+$gutter-width: 24px;
 
 // ---斷點---
 $breakpoints: (
@@ -15,8 +15,8 @@ $colors: (
   'secondary': $secondary,
   'white': #ffffff,
   'black': #000000,
-  'rice':#FBF2F2,
-  'red':#AA0601,
+  'rice': #fbf2f2,
+  'red': #aa0601,
 );
 
 // ---文字---
@@ -30,11 +30,15 @@ $font-weight: (
 $font-size-base: 16px;
 
 $title-sizes: (
-  1: $font-size-base * 4,// 64px
-  2: $font-size-base * 3,// 48px
+  1: $font-size-base * 4,
+  // 64px
+  2: $font-size-base * 3,
+  // 48px
   3: $font-size-base * 2,
-  4: $font-size-base * 1.5,// 24px
-  5: $font-size-base * 1.25,// 20px
+  4: $font-size-base * 1.5,
+  // 24px
+  5: $font-size-base * 1.25,
+  // 20px
 );
 
 $font-sizes: (
@@ -47,7 +51,8 @@ $font-sizes: (
   32: 32px,
   36: 36px,
   42: 42px,
-  100:100px,
+  48: 48px,
+  100: 100px,
 );
 // ---display---
 $display: (flex, block, none, inline-block);
@@ -58,19 +63,16 @@ $flex-wrap: (
 );
 $justify-content: (
   center: center,
-  start:flex-start,
-  end:flex-end,
+  start: flex-start,
+  end: flex-end,
   between: space-between,
 );
 $align-items: (
   center: center,
-  end:flex-end,
+  end: flex-end,
   stretch: stretch,
 );
-$flex-direction:(
-  row,
-  column,
-);
+$flex-direction: (row, column);
 //---間距---
 $spacer: 1rem;
 
@@ -84,7 +86,7 @@ $direction: (
 $gap-spacers: (
   0: 0,
   1: $spacer * 1.5,
-    // 24px
+  // 24px
   2: $spacer * 2,
   // 32px
   3: $spacer * 3,
@@ -94,14 +96,14 @@ $gap-spacers: (
 );
 
 $spacers: (
-  8:8px,
+  8: 8px,
   10: 10px,
   16: 16px,
   20: 20px,
   24: 24px,
   32: 32px,
-  40:40px,
+  40: 40px,
   48: 48px,
-  80:80px,
-  96:96px,
+  80: 80px,
+  96: 96px,
 );

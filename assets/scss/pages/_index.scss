@@ -14,3 +14,24 @@
     height: 387px;
   }
 }
+
+.bg-glasses{
+  background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 608px;
+
+  @include breakpoints(md){
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true');
+    background-position: center top;
+    background-size: contain;
+    height: 960px;
+  }
+  @include breakpoints(sm){
+    background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true');
+    background-size: cover;
+    height: 820px;
+  }
+}
