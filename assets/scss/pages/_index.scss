@@ -54,3 +54,33 @@
     flex-grow: 1;
   }
 }
+
+.index-form{
+  input,textarea{
+    width: 100%;
+    min-height: 33px;
+    background-color: #FBF2F2;
+  }
+  input[type="checkbox"]{
+    width: auto;
+    min-height:auto;
+  }
+  .submit-btn{
+    color: white;
+    font-weight: bold;
+    background-color: #AA0601;
+    padding: 16px 0px;
+    width: 65%;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    margin-top: 48px;
+    &:hover{
+      opacity: 0.8;
+    }
+    @include breakpoints(sm){
+      width: 100%;
+      margin-top: 24px;
+    }
+  }
+}
