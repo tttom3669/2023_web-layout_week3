@@ -4,11 +4,9 @@
   height: 48px;
   background-size: contain;
   background-repeat: no-repeat;
-  text-indent: 101%;
-  overflow: hidden;
-  white-space: nowrap;
+  @include hide-text;
 }
-@include breakpoints(md){
+@include breakpoints(sm){
   .mobile-bar{
     li{
       height: 48px;

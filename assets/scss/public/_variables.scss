@@ -1,3 +1,5 @@
+$gutter-width:24px;
+
 // ---斷點---
 $breakpoints: (
   lg: 992px,
@@ -26,7 +28,7 @@ $font-weight: (
 $font-size-base: 16px;
 
 $title-sizes: (
-  1: $font-size-base * 4,
+  1: $font-size-base * 4,// 64px
   2: $font-size-base * 3,
   3: $font-size-base * 2,
   4: $font-size-base * 1.5,// 24px
@@ -54,10 +56,12 @@ $flex-wrap: (
 $justify-content: (
   center: center,
   start:flex-start,
+  end:flex-end,
   between: space-between,
 );
 $align-items: (
   center: center,
+  end:flex-end,
   stretch: stretch,
 );
 $flex-direction:(

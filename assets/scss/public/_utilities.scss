@@ -2,17 +2,43 @@
 .container {
   max-width: 1320px; //(1296+12+12)
   margin: 0 auto;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: calc($gutter-width / 2);
+  padding-right: calc($gutter-width / 2);
   @include breakpoints(lg) {
-    padding-left: 36px;
-    padding-right: 36px;
+    max-width: 720px;
   }
   @include breakpoints(sm) {
-    padding-left: 13px;
-    padding-right: 14px;
+    max-width: 372px;
   }
 }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -(calc($gutter-width / 2));
+  margin-right: -(calc($gutter-width / 2));
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    position: relative;
+    max-width: calc(100% * $i / 12);
+    padding-left: calc($gutter-width / 2);
+    padding-right: calc($gutter-width / 2);
+  }
+}
+@each $bp_key, $bp_val in $breakpoints {
+  @media (max-width: $bp_val) {
+    @for $i from 1 through 12 {
+      .col-#{$bp_key}-#{$i} {
+        position: relative;
+        max-width: calc(100% * $i / 12);
+        padding-left: calc($gutter-width / 2);
+        padding-right: calc($gutter-width / 2);
+      }
+    }
+  }
+}
+
 
 //--- 顏色 ---
 @each $key, $value in $colors {
@@ -35,6 +61,16 @@
   .h#{$key} {
     font-size: $value;
     font-weight: 700;
+  }
+}
+@each $bp_key, $bp_val in $breakpoints {
+  @media (max-width: $bp_val) {
+    @each $key, $value in $title-sizes {
+      .h#{$key}-#{$bp_key} {
+        font-size: $value;
+        font-weight: 700;
+      }
+    }
   }
 }
 
@@ -182,7 +218,7 @@
   border-bottom: 1px solid white;
 }
 
-.title-border{
-    border-left: 8px solid #9F1213;
-    padding-left: 16px;
+.title-border {
+  border-left: 8px solid #9f1213;
+  padding-left: 16px;
 }
