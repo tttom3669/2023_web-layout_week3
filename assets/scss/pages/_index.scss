@@ -1,4 +1,4 @@
-.banner{
+.banner {
   background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true');
   background-position: left center;
   background-repeat: no-repeat;
@@ -6,16 +6,16 @@
   max-width: 100%;
   height: 787px;
   padding-top: 296px;
-  @include breakpoints(md){
+  @include breakpoints(md) {
     background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true');
   }
-  @include breakpoints(sm){
+  @include breakpoints(sm) {
     padding-top: 144px;
     height: 387px;
   }
 }
 
-.bg-glasses{
+.bg-glasses {
   background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true');
   background-position: center center;
   background-repeat: no-repeat;
@@ -23,15 +23,34 @@
   max-width: 100%;
   height: 608px;
 
-  @include breakpoints(md){
+  @include breakpoints(md) {
     background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true');
     background-position: center top;
     background-size: contain;
     height: 960px;
   }
-  @include breakpoints(sm){
+  @include breakpoints(sm) {
     background-image: url('https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true');
     background-size: cover;
     height: 820px;
+  }
+}
+
+.customer-card {
+  box-shadow: 0px 2px 6px #00000029;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.card-content{
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  height: 100%;
+  flex: 1 1 205px;
+  .message{
+    flex-grow: 1;
   }
 }
