@@ -4,7 +4,7 @@
   margin: 0 auto;
   padding-left: calc($gutter-width / 2);
   padding-right: calc($gutter-width / 2);
-  @include breakpoints(lg) {
+  @include breakpoints(md) {
     max-width: 720px;
   }
   @include breakpoints(sm) {
@@ -91,6 +91,9 @@
 
 .text-center{
   text-align: center;
+}
+.text-italic{
+  font-style: italic;
 }
 // ---display---
 @each $value in $display {
