@@ -12,8 +12,8 @@
     />
     <!-- aos 視差滾動套件 -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script type="module" crossorigin src="/2023_web-layout_week3-4/assets/main-70c05c6a.js"></script>
-    <link rel="stylesheet" href="/2023_web-layout_week3-4/assets/main-f8ab458c.css">
+    <script type="module" crossorigin src="/2023_web-layout_week3-4/assets/cus_aos-1df8cb8b.js"></script>
+    <link rel="stylesheet" href="/2023_web-layout_week3-4/assets/cus_aos-2b78afc3.css">
   </head>
   <body>
     <header class="bg-primary">
@@ -35,7 +35,7 @@
 </ul>
     <section class="banner" data-aos="fade-up">
       <div
-        class="container text-secondary d-flex justify-content-center align-items-end flex-column"
+        class="container text-secondary d-flex justify-content-center align-items-end flex-column h-full"
       >
         <p class="fs-36 fs-sm-16">Promise-Desert 2020 早春系列</p>
         <h1 class="h1 mb-10 h4-sm mb-sm-8">看得清，才能看得遠</h1>
@@ -143,7 +143,7 @@
       </div>
     </section>
 
-    <section class="bg-glasses" >
+    <section class="bg-glasses">
       <div class="container pt-80 pb-80 pt-sm-40 pb-sm-40" data-aos="fade-up">
         <h2 class="text-white h2 text-center mb-48 mb-sm-24 h4-md">
           聯名設計鏡框
@@ -184,7 +184,7 @@
     </section>
 
     <section>
-      <div class="container pt-80 pb-80 pt-sm-40 pb-sm-40"  data-aos="fade-up">
+      <div class="container pt-80 pb-80 pt-sm-40 pb-sm-40" data-aos="fade-up">
         <h2 class="text-secondary text-center h2 mb-48 h4-sm mb-sm-24">
           顧客推薦
         </h2>
@@ -198,7 +198,7 @@
               <div class="card-content">
                 <h3 class="fw-medium mb-8">Jessy</h3>
                 <p class="message">眼鏡品質優良，下次還會想來這邊購買！</p>
-                <p class="text-gray fs-14 mt-auto">2021/06/20</p>
+                <time datetime="2021-06-20" class="text-gray fs-14 mt-auto">2021/06/20</time>
               </div>
             </div>
           </li>
@@ -213,7 +213,7 @@
                 <p class="message">
                   做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！
                 </p>
-                <p class="text-gray fs-14 mt-auto">2021/04/18</p>
+                <time datetime="2021-04-18" class="text-gray fs-14 mt-auto">2021/04/18</time>
               </div>
             </div>
           </li>
@@ -228,7 +228,7 @@
                 <p class="message">
                   謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！
                 </p>
-                <p class="text-gray fs-14 mt-auto">2020/12/25</p>
+                <time datetime="2021-12-25" class="text-gray fs-14 mt-auto">2020/12/25</time>
               </div>
             </div>
           </li>
@@ -241,7 +241,7 @@
               <div class="card-content">
                 <h3 class="fw-medium mb-8">Kyuan</h3>
                 <p class="message">服務很好，品質沒有任何問題，非常喜歡。</p>
-                <p class="text-gray fs-14 mt-auto">2020/10/31</p>
+                <time datetime="2021-10-31" class="text-gray fs-14 mt-auto">2020/10/31</time>
               </div>
             </div>
           </li>
@@ -250,7 +250,10 @@
     </section>
 
     <section class="bg-rice">
-      <div class="container pt-80 pb-80 pt-sm-40 pb-sm-40 index-form"  data-aos="fade-up">
+      <div
+        class="container pt-80 pb-80 pt-sm-40 pb-sm-40 index-form"
+        data-aos="fade-up"
+      >
         <div class="row justify-content-center">
           <div class="col-6 col-md-9 col-sm-12">
             <h2 class="h2 text-secondary text-center mb-48 h4-sm mb-md-24">
@@ -261,7 +264,7 @@
             </p>
             <form>
               <label for="name" class="mb-8">姓名</label>
-              <br />
+
               <input
                 type="text"
                 placeholder="陳小明"
@@ -269,9 +272,9 @@
                 name="name"
                 class="mb-16"
               />
-              <br />
+
               <label for="tel" class="mb-8">聯絡電話</label>
-              <br />
+
               <input
                 type="tel"
                 placeholder="0912-345-678"
@@ -279,9 +282,9 @@
                 name="tel"
                 class="mb-16"
               />
-              <br />
+
               <label for="email" class="mb-8">電子郵件</label>
-              <br />
+
               <input
                 type="email"
                 placeholder="example@email.com"
@@ -289,9 +292,9 @@
                 name="email"
                 class="mb-16"
               />
-              <br />
+
               <label for="opinion" class="mb-8">意見反應</label>
-              <br />
+
               <textarea
                 name="pinion"
                 id="opinion"
@@ -300,7 +303,7 @@
                 class="mb-16"
                 placeholder="請輸入您的意見"
               ></textarea>
-              <br />
+
               <input type="checkbox" id="privacy" name="privacy" />
               <label for="privacy">
                 我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。
@@ -373,7 +376,6 @@
 
     <!-- aos 視差滾動套件 -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="../assets/js/cus_aos.js"></script>
     
   </body>
 </html>
