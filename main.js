@@ -1,3 +1,3 @@
 import './assets/scss/all.scss';
 
-console.log("Hello world!");
+import './assets/js/cus_aos.js'
